@@ -1,0 +1,18 @@
+{
+  "name": "ui5-task-i18n-yaml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "ui5 build --config test/ui5-test.yaml --dest test/dist --clean-dest",
+    "test:serve": "ui5 serve --config test/ui5-test.yaml"
+  },
+  "dependencies": {
+    "@ui5/logger": "^2.0.1",
+    "js-yaml": "^4.1.0",
+    "micromatch": "^4.0.4"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^2.11.0"
+  }
+}

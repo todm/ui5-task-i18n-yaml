@@ -1,0 +1,17 @@
+buttons: &buttons
+  confirm: Confirm
+  cancel: Cancel
+  close: Close
+
+
+test: *buttons
+
+property1: Lorem Ipsum
+property2: dolor sit amet
+property3:
+  nestedProperty1: consectetuer
+  nestedProperty2: adipiscing elit
+  nestedArray:
+    - Aenean
+    - commodo
+    - ligula

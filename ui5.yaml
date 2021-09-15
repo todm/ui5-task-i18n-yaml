@@ -1,0 +1,15 @@
+specVersion: "2.3"
+kind: extension
+type: task
+metadata:
+  name: ui5-task-i18n-yaml
+task:
+  path: lib/i18n-yaml/task.js
+---
+specVersion: "2.3"
+kind: extension
+type: server-middleware
+metadata:
+  name: ui5-middleware-i18n-yaml
+middleware:
+  path: lib/i18n-yaml/middleware.js
