@@ -1,8 +1,12 @@
 {
-  "name": "ui5-task-i18n-yaml",
-  "version": "1.0.0",
+  "name": "@todms/ui5-task-i18n-yaml",
+  "version": "1.0.1",
+  "description": "Task for transforming YAML files into ui5 compatible i18n property files.",
   "main": "index.js",
-  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
     "test": "ui5 build --config test/ui5-test.yaml --dest test/dist --clean-dest",
     "test:serve": "ui5 serve --config test/ui5-test.yaml"
@@ -14,5 +18,27 @@
   },
   "devDependencies": {
     "@ui5/cli": "^2.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todm/ui5-task-i18n-yaml.git"
+  },
+  "keywords": [
+    "ui5",
+    "task",
+    "middleware",
+    "i18n",
+    "properties",
+    "yaml"
+  ],
+  "author": "todm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/todm/ui5-task-i18n-yaml/issues"
+  },
+  "homepage": "https://github.com/todm/ui5-task-i18n-yaml#readme",
+  "files": [
+    "lib",
+    "ui5.yaml"
+  ]
 }
