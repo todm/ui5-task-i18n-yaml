@@ -1,6 +1,6 @@
 {
   "name": "@todms/ui5-task-i18n-yaml",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Task for transforming YAML files into ui5 compatible i18n property files.",
   "main": "index.js",
   "directories": {

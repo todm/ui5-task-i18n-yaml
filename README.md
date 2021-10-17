@@ -76,6 +76,7 @@ property3_nestedArray_2=ligula
 ```
 
 ## Multiple documents
+
 If you want to write multiple documents in one file you can define the `__file` property to define the resulting filename. If no `__file` property gets specified the documents will be numbered.
 
 ```yaml
@@ -113,12 +114,12 @@ You can add the following configurations to the task:
 
 You can add the following configurations to the middleware:
 
-| Name          | Type                 | Default                     | Description                                                                                                   |
-| ------------- | -------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| include       | `string \| string[]` | `["**/i18n*.properties"]`   | Files that should be included                                                                                 |
-| exclude       | `string \| string[]` | `[]`                        | Files that should be excluded                                                                                 |
-| separator     | `string`             | `"_"`                       | The separator to use when flattening objects                                                                  |
-| escape        | `boolean`            | `false`                     | Escape files in the task                                                                                      |
-| searchInclude | `string \| string[]` | `["**/*.yaml", "**/*.yml"]` | Files that should be included when Searching the project                                                      |
-| passFile      | `boolean`            | `false`                     | Wether the file should be passed to the next middleware (Only works if next middleware checks req.passedFile) |
-
+| Name          | Type                      | Default                     | Description                                                                                                                               |
+| ------------- | ------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| include       | `string \| string[]`      | `["**/i18n*.properties"]`   | Files that should be included                                                                                                             |
+| exclude       | `string \| string[]`      | `[]`                        | Files that should be excluded                                                                                                             |
+| separator     | `string`                  | `"_"`                       | The separator to use when flattening objects                                                                                              |
+| escape        | `boolean`                 | `false`                     | Escape files in the task                                                                                                                  |
+| searchInclude | `string \| string[]`      | `["**/*.yaml", "**/*.yml"]` | Files that should be included when Searching the project                                                                                  |
+| passFile      | `boolean`                 | `false`                     | Wether the file should be passed to the next middleware (Only works if next middleware checks req.passedFile)                             |
+| onError       | `'next'\|'error'\|'exit'` | `'error'`                   | Defines behaviour when an error occures. `next`: next middleware will be called, `error`: server will return 503, `exit`: Server will end |
